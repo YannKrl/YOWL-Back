@@ -18,7 +18,7 @@
       "target": "api::category.category",
       "inversedBy": "userposts"
     },
-    "users_permissions_user": {
+    "User": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user"
@@ -27,14 +27,15 @@
       "type": "text"
     },
     "media": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }
