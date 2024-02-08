@@ -67,6 +67,9 @@
     },
     "Age": {
       "type": "integer"
+    },
+    "Phone": {
+      "type": "biginteger"
     }
   }
 }
